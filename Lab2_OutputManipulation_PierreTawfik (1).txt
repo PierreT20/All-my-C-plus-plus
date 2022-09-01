@@ -1,0 +1,22 @@
+/*==========================================================
+
+ Title:       Lab2 - Output Manipulation
+ Course:      CSC 1100
+ Author:      <Pierre Tawfik>
+ Date:        < 25/01 /2022 >
+ Description: We want the program to print out ten then 10 spaces "fourfour" and then a line under we want 80 dashes
+
+ ==========================================================
+*/
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+ cout << "ten";
+ cout << setw(18) << "fourfour" << endl;  //This line I am using to print out the first line with the ten spaces in between
+ cout << setfill('-') << setw(80) << "" << endl; // this line here i am using setfill and then leaving the text blank so it can fill up the line with 80 dashes
+  return 0;
+}
+
